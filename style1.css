@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.toggle {
+  font-size: 40px;
+  color: #fff;
+  float: left;
+  line-height: 45px;
+  margin-left: 5%;
+  margin-top: 7px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  background-color: #000;
+  height: 55px;
+  width: 100%;
+  position: fixed;
+}
+
+ul {
+  float: left;
+  margin-left: 10%;
+}
+
+.socialtop {
+  float: right;
+  margin-right: 10%;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+}
+
+ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+ul li:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+ul li:hover {
+  background-color: #ff7d00;
+  color: #fff;
+}
+
+.top-social {
+  padding: 14px 15px;
+}
+
+.top-social a {
+  padding: 13px;
+  color: #fff;
+}
+
+.top-social a:hover {
+  color: #ff7d00;
+}
+
+.socialtop .top-social a {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1052px) {
+  .toggle {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    top: -400px;
+    z-index: -1;
+    margin-top: -15px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    background-color: #222222;
+    display: inline-block;
+    transition: top 0.4s;
+    margin-left: 0;
+  }
+  ul.show {
+    top: 60px;
+  }
+  ul li {
+    top: 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    width: 100%;
+  }
+}
+
+/* body */
+.main-body {
+  width: 100%;
+  background: url(https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1605617750/staging/Home/Banner/banner-bg.jpg)
+    50% no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-body .sub-body {
+  background: #fff;
+  padding: 75px;
+  width: 730px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+}
+
+.main-body .sub-body h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  color: #000;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.main-body .sub-body p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.main-body .sub-body .inner-body h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.main-body .sub-body .inner-body .tiles {
+  display: flex;
+  justify-content: center;
+}
+
+.main-body .sub-body .inner-body .tiles .tiles-items {
+  margin: 20px;
+  width: 100px;
+}
+
+.main-body .sub-body .inner-body .tiles .tiles-items img {
+  width: 120%;
+  border-radius: 10%;
+}
+
+/* repetitoin box */
+
+.rep-box {
+  padding: 20px;
+  background-color: rgba(220, 220, 220, 0.3);
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+.rep-box .container h1 {
+  font-size: 35px;
+  padding: 10px 0px 20px 0px;
+  font-family: Serifa, Geneva, Tahoma, sans-serif;
+}
+
+.rep-box .container p {
+  font-size: 20px;
+  font-weight: 250;
+  line-height: 30px;
+  margin: 0px 100px 20px 100px;
+}
+
+.rep-box .container button {
+  padding: 15px;
+  width: 350px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* item container */
+
+.item-megaContainer {
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.item-container > h2 {
+  font-size: 36px;
+  color: #000;
+  margin: 0 0 24px;
+  font-family: Serifa;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.item-container .button-group button {
+  font-size: 30px;
+  border-radius: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 120px;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: black;
+  border: none;
+}
+
+.item-container .item-row {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 10%;
+}
+
+.item-container .item-row .item {
+  padding: 20px 20px 0px 20px;
+}
+
+.item .products-detail button {
+  width: 150px;
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* footer */
+
+.last-container {
+  padding: 30px 0;
+}
+
+.box {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.item-container h2 {
+  font-size: 60px;
+  font-family: Serifa;
+  text-align: center;
+  font-weight: 800;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.row img {
+  max-height: 300px;
+  border-radius: 20%;
+}
+
+.row .innerBox {
+  max-width: 450px;
+  margin: 50px;
+}
+
+.row .innerBox h3 {
+  padding: 16px;
+}
+
+.boxCont {
+  align-items: center;
+}
